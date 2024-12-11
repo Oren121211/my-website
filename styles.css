@@ -1,135 +1,44 @@
 
-/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
-/* Header Styles */
 header {
-    background-color: #0056b3;
+    background-color: #007bff;
     color: white;
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-/* Navigation Styles */
 nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
     justify-content: center;
-    margin: 10px 0 0;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffd700;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #003a75;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    font-size: 16px;
 }
 
-footer p {
-    margin: 0;
-    font-size: 1rem;
-}
-
-/* Main Content Styles */
 main {
     padding: 20px;
 }
 
-h2 {
-    color: #0056b3;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Product List Styles */
-ul {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-ul li {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-ul li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-ul li img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-ul li h3 {
-    margin: 10px 0;
-    font-size: 1.5rem;
-    color: #0056b3;
-}
-
-ul li p {
-    margin: 5px 0;
-}
-
-ul li a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #0056b3;
+footer {
+    background-color: #007bff;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s;
+    text-align: center;
+    padding: 10px 0;
 }
 
-ul li a:hover {
-    background-color: #003a75;
-}
-
-/* Price Styles */
-.price {
-    font-weight: bold;
-    color: #28a745;
-    font-size: 1.2rem;
-}
