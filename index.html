@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - The Ultimate Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="title">Welcome to the Most Exclusive Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home-link">Home</a></li>
+                <li><a href="about.html" id="about-link">About Us</a></li>
+                <li><a href="contact.html" id="contact-link">Contact Us</a></li>
+                <li><a href="products.html" id="products-link">Products</a></li>
+            </ul>
+            <div>
+                <label for="language-selector">Language:</label>
+                <select id="language-selector">
+                    <option value="en">English</option>
+                    <option value="he">עברית</option>
+                </select>
+                <label for="currency-selector">Currency:</label>
+                <select id="currency-selector">
+                    <option value="USD">USD ($)</option>
+                    <option value="ILS">ILS (₪)</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h2 id="intro-title">Unleash the Power of Premium Shopping</h2>
+            <p id="intro-description">Discover a world of elegance and innovation in every product.</p>
+        </section>
+        <section id="products">
+            <h2 id="products-title">Our Handpicked Selection</h2>
+            <ul>
+                <li>
+                    <h3 class="product-title">Smart LED Lamp</h3>
+                    <img src="images/led_lamp.jpg" alt="Smart LED Lamp" />
+                    <p class="product-description">A cutting-edge LED lamp with adjustable brightness and remote control. Ideal for any setting.</p>
+                    <p class="product-price" data-usd-price="27.98">$27.98</p>
+                </li>
+                <li>
+                    <h3 class="product-title">Wireless Charger</h3>
+                    <img src="images/wireless_charger.jpg" alt="Wireless Charger" />
+                    <p class="product-description">Qi-compatible wireless charger with sleek design and rapid charging capabilities.</p>
+                    <p class="product-price" data-usd-price="17.98">$17.98</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p id="footer-text">&copy; 2024 The Ultimate Store</p>
+    </footer>
+</body>
+</html>
