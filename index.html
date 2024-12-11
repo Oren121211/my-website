@@ -1,22 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Our Store</title>
+    <title>Dynamic Website</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Amazing Store</h1>
+        <h1 id="title">Welcome to Our Store</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="#products">Products</a></li>
+                <li><a href="index.html" id="home-link">Home</a></li>
+                <li><a href="about.html" id="about-link">About Us</a></li>
+                <li><a href="contact.html" id="contact-link">Contact Us</a></li>
+                <li><a href="#products" id="products-link">Products</a></li>
             </ul>
             <div>
                 <label for="language-selector">Language:</label>
@@ -24,6 +23,7 @@
                     <option value="en">English</option>
                     <option value="he">עברית</option>
                 </select>
+
                 <label for="currency-selector">Currency:</label>
                 <select id="currency-selector">
                     <option value="USD">USD ($)</option>
@@ -32,55 +32,37 @@
             </div>
         </nav>
     </header>
+
     <main>
         <section id="intro">
-            <h2>Explore Our Top Products</h2>
-            <p>Find the best products carefully selected just for you. Shop now and enjoy!</p>
+            <h2 id="intro-title">Discover Our Premium Products</h2>
+            <p id="intro-description">Experience the best shopping with hand-picked products.</p>
         </section>
-        <section id="products">
-            <h2>Products</h2>
-            <ul>
 
+        <section id="products">
+            <h2 id="products-title">Our Products</h2>
+            <ul>
                 <li>
-                    <h3>Smart LED Lamp</h3>
-                    <img src="images/led_lamp.jpg" alt="Smart LED Lamp" style="width:200px;"/>
-                    <p>Price: 27.98 USD</p>
-                    <a href="product_1_en.html">View Product</a>
+                    <h3 class="product-title">Smart LED Lamp</h3>
+                    <img src="images/led_lamp.jpg" alt="Smart LED Lamp" />
+                    <p class="product-description">A modern LED lamp with adjustable brightness and remote control. Perfect for any space.</p>
+                    <p class="product-price" data-usd-price="27.98">$27.98</p>
                 </li>
-    
                 <li>
-                    <h3>Wireless Charger</h3>
-                    <img src="images/wireless_charger.jpg" alt="Wireless Charger" style="width:200px;"/>
-                    <p>Price: 17.98 USD</p>
-                    <a href="product_2_en.html">View Product</a>
+                    <h3 class="product-title">Wireless Charger</h3>
+                    <img src="images/wireless_charger.jpg" alt="Wireless Charger" />
+                    <p class="product-description">Fast and efficient Qi-compatible wireless charger. Sleek and compact design.</p>
+                    <p class="product-price" data-usd-price="17.98">$17.98</p>
                 </li>
-    
-                <li>
-                    <h3>Bluetooth Speaker</h3>
-                    <img src="images/bluetooth_speaker.jpg" alt="Bluetooth Speaker" style="width:200px;"/>
-                    <p>Price: 22.08 USD</p>
-                    <a href="product_3_en.html">View Product</a>
-                </li>
-    
-                <li>
-                    <h3>Fitness Tracker</h3>
-                    <img src="images/fitness_tracker.jpg" alt="Fitness Tracker" style="width:200px;"/>
-                    <p>Price: 32.98 USD</p>
-                    <a href="product_4_en.html">View Product</a>
-                </li>
-    
-                <li>
-                    <h3>Noise-Cancelling Headphones</h3>
-                    <img src="images/headphones.jpg" alt="Noise-Cancelling Headphones" style="width:200px;"/>
-                    <p>Price: 47.98 USD</p>
-                    <a href="product_5_en.html">View Product</a>
-                </li>
-    
             </ul>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Your Store</p>
+        <p id="footer-text">&copy; 2024 Your Store</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
+
