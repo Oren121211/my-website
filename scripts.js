@@ -1,4 +1,5 @@
 
+
 document.addEventListener("DOMContentLoaded", () => {
     const languageSwitcher = document.getElementById("language-switcher");
     const currencySwitcher = document.getElementById("currency-switcher");
