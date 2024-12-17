@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <select id="language-switcher">
+                        <option value="en">English</option>
+                        <option value="he">עברית</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="currency-switcher">
+                        <option value="usd">USD</option>
+                        <option value="ils">ש״ח</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+<section id="banner" style="text-align: center; padding: 50px; background: linear-gradient(90deg, #6a11cb, #2575fc); color: white;">
+    <h1>Discover Our Premium Products</h1>
+    <p>Exclusive deals and unbeatable prices!</p>
+    <button style="padding: 10px 20px; background: white; color: #6a11cb; border: none; font-size: 1rem; border-radius: 5px; cursor: pointer;">
+        Shop Now
+    </button>
+</section>
+<section id="products" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 20px;">
+    <article class="product-card">
+        <img src="images/product1.jpg" alt="Product 1">
+        <h2>Wireless Headphones</h2>
+        <p>High-quality sound and comfort for daily use.</p>
+        <p class="price">$50.00</p>
+        <button>Buy Now</button>
+    </article>
+    <article class="product-card">
+        <img src="images/product2.jpg" alt="Product 2">
+        <h2>Smart Watch</h2>
+        <p>Track your fitness and notifications seamlessly.</p>
+        <p class="price">$75.00</p>
+        <button>Buy Now</button>
+    </article>
+    <article class="product-card">
+        <img src="images/product3.jpg" alt="Product 3">
+        <h2>Portable Speaker</h2>
+        <p>Perfect sound for any occasion.</p>
+        <p class="price">$40.00</p>
+        <button>Buy Now</button>
+    </article>
+</section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Company Name</p>
+    </footer>
+</body>
+</html>
